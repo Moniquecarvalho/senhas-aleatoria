@@ -12,7 +12,7 @@
 - O usuário pode definir o comprimento da senha entre 6 e 31 caracteres.
 
 <div align="center">
-  <a href="https://moniquecarvalho.github.io/qr-code/"><strong>Visualizar o projeto »</strong></a>
+  <a href="https://moniquecarvalho.github.io/senhas-aleatoria/"><strong>Visualizar o projeto »</strong></a>
     <br />
     <br />
 </div>   
