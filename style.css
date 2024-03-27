@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#060102;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 360px;
+    border: 2px solid #00C9D6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F8EF00; 
+    font-size: 21px;
+    margin-top:6px;
+}
+
+.container .password-box {
+    width: 100%;
+    height: 50px;
+    border:2px solid #00C9D6;
+    border-radius: 3px;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.container .password-box .password {
+    width: 265px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #00C9D6;
+    padding-left: 15px;
+}
+
+.container .password-box h3 {
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.container .password-box i{
+    color:#FF0041;   
+    margin-left:5px;
+    font-size:27px;
+    cursor:pointer;
+    }
+    
+
+.copy-password-btn {
+    all: unset;
+    width: 170px;
+    height: 45px;
+    background: #F8EF00;
+    color: #000;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #FF0041;
+    padding: 0px 22px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.copy-password-btn:active {
+    box-shadow: 0 12px 15px;
+    transform: translateY(3px); 
+}
+
+.copy-password-btn i {
+    position: relative;
+    left: 18px;
+    font-size: 19px;
+}
+
+.container .copy-password-btn::before {
+    content: "";
+    width: 20px;
+    height: 28px;
+    background: #000;
+    transform: rotate(135deg);
+    position: absolute;
+    margin-top: 45px;
+    margin-left: -30px;
+}
+
+.container .password-length {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.container .password-length input {
+    width: 235px;
+    height: 3px;
+    background: #00C9D6;
+    cursor: pointer;
+    appearance: none;
+}
+
+.container .password-length input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #F8EF00;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.container .password-length .length-value {
+    width: 60px;
+    height: 25px;
+    border: 1px solid #00C9D6;
+    color: #00C9D6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.container .checkboxes-box {
+    padding: 1px;
+    margin-top: 18px;
+}
+
+.container .checkboxes-box .lowercase {
+    pointer-events: none;
+}
+
+.container .checkboxes-box div {
+    width: 100%;
+    height: 35px;
+    padding-left: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.container .checkboxes-box div span {
+    padding-left: 0px;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.container .checkboxes-box div input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #00C9D6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s;
+    position: absolute;
+    right: 30px;
+}
+
+.container .checkboxes-box div input:checked {
+    background: #F8EF00;
+    border-color: #F8EF00;
+    transition: all .2s;
+}
+
+.numbers span, .symbols span {
+    font-size: 18px;
+}
+
+::selection {
+    background:rgb(100, 149, 237, 0.8);
+    color: #FFF;
+}

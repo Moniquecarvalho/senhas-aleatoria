@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Senhas Aleatórias</h2>
+        <div class="password-box">
+            <div class="password">
+                <h3>$@DWG?e&Id</h3>
+            </div>
+            <i class="material-icons generate-btn">autorenew</i>
+        </div>
+        <button class="copy-password-btn" id="copy-btn">Copiar Senha<i class="material-icons">trending_flat</i>
+        </button>
+
+        <div class="password-length">
+            <input type="range" min="6" max="32" value="12" oninput="getPassLengthValue()">
+            <div class="length-value">12</div>
+        </div>
+
+        <div class="checkboxes-box">
+            <div class="uppercase">
+                <input type="checkbox" name="" id="uppercase">
+                <span>Incluir letras maiúsculas</span>
+            </div>
+
+            <div class="lowercase">
+                <input type="checkbox" name="" id="" checked>
+                <span>Incluir letras minúsculas</span>
+            </div>
+
+            <div class="numbers">
+                <input type="checkbox" name="" id="numbers">
+                <span>Incluir númeross</span>
+            </div>
+
+            <div class="symbols">
+                <input type="checkbox" name="" id="symbols">
+                <span>Incluir símbolos</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="password.js"></script>
+</body>
+
+</html>
